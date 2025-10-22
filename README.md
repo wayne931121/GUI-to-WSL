@@ -1,11 +1,11 @@
 # Adding a GUI to Windows Subsystem for Linux
 
-**WARNING!!** - Windows 10/11 PRO is Needed to Run this
-
 1. Installing XFCE Desktop Environment
-     - `sudo apt install -y xrdp xfce4 xfce4-goodies`
+```sh
+sudo apt install -y xrdp xfce4 xfce4-goodies
+```
   
-2. Configuring the Virtual Server
+3. Configuring the Virtual Server
 ```sh
 sudo cp /etc/xrdp/xrdp.ini /etc/xrdp/xrdp.ini.bak
 sudo sed -i 's/3389/3390/g' /etc/xrdp/xrdp.ini
