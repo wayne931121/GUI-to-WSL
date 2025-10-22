@@ -14,10 +14,12 @@ sudo sed -i 's/xserverbpp=24/#xserverbpp=24\nxserverbpp=128/g' /etc/xrdp/xrdp.in
 echo xfce4-session > ~/.xsession
 ```
 4. Finish Setting up The RDP Access
-     - `sudo nano /etc/xrdp/startwm.sh`
-         -  Then comment out the following lines by placing a `#` before them: `test -x /etc/x11...` and the next line; `echo /bin/sh /etc/x11...`
-         -  Now, add the following on a new line at the very end: `startxfce4`
-         -  Save an Exit (ctrl+S & ctrl+X)
+```sh
+sudo nano /etc/xrdp/startwm.sh
+```
+- Then comment out the following lines by placing a `#` before them: `test -x /etc/x11...` and the next line; `echo /bin/sh /etc/x11...`
+- Now, add the following on a new line at the very end: `startxfce4`
+- Save an Exit (ctrl+S & ctrl+X)
 
 https://github.com/microsoft/WSL/issues/5719#issuecomment-1475679062
 
