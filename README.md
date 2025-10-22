@@ -51,6 +51,6 @@ startxfce4
 ```
 ```sh
 sudo systemctl restart xrdp
- sudo /etc/init.d/xrdp start
+sudo /etc/init.d/xrdp start
 ```
 Now, open Remote Desktop on your Windows host machine, and connect to localhost:3390
