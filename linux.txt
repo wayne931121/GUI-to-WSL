@@ -1,0 +1,16 @@
+sudo apt update
+#apt list --upgradable
+sudo apt upgrade
+sudo apt-get install libxss1 libappindicator1 libindicator7
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome*.deb
+sudo chown -Rv _apt:root /var/cache/apt/archives/partial/
+sudo chmod -Rv 700 /var/cache/apt/archives/partial/
+sudo apt-get -f install
+google-chrome
+sudo apt-get uninstall ubuntu-desktop
+sudo apt install ibus
+sudo apt install pulseaudio
+pulseaudio --check
+pulseaudio -D
+ibus-daemon
